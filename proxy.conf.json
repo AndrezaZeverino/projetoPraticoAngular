@@ -1,0 +1,7 @@
+{
+  "/api": {
+    "target": "http://dog-api.kinduff.com",
+    "secure": false,
+    "changeOrigin": true
+  }
+}
