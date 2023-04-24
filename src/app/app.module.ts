@@ -9,7 +9,7 @@ import { OneComponentComponent } from 'src/one-component/one-component.component
 @NgModule({
   declarations: [
     AppComponent,
-    OneComponentComponent
+    OneComponentComponent,
   ],
   imports: [
     BrowserModule,

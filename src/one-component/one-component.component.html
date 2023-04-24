@@ -5,9 +5,9 @@
   </div>
 
   <p>Clique abaixo para buscar a lista de produtos</p>
-  <button (click)="searchDataDogs()">Lista de produtos</button>
+  <!-- <button (click)="searchProducts()">Lista de produtos</button> -->
 
-  <div>
+  <div class="cards">
     <!-- <select class="form-control">
     <option *ngFor="let produto of produtos">{{produto.name}}</option>
   </select> -->
@@ -16,7 +16,16 @@
       <li *ngFor="let produto of produtos">
         {{ produto.name }}
         {{ produto.image_link }}
+        <div class="card col-sm-4" style="width: 18rem;">
+          <img class="card-img-top" src="{produto.image_link}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">{{ produto.name }}</h5>
+            <p class="card-text">{{ produto.description}}</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
       </li>
     </ol>
   </div>
+
 </div>
