@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ApiService {
-  private apiUrl = 'http://dog-api.kinduff.com/api/facts';
+  private apiUrl = 'http://makeup-api.herokuapp.com/api/v1/products.json/';
 
   constructor(private http: HttpClient) { }
 

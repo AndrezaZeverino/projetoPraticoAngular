@@ -1,3 +1,39 @@
 * {
-  background-color: rgb(183, 183, 209);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 80%;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.header {
+  margin-top: 20px;
+  margin-left: 20px;
+  position: relative;
+
+}
+.logo{
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  animation-name: logo;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  background-color: yellow;
+
+}
+
+@keyframes logo {
+  0% { background-color: rgb(179, 179, 243);}
+  20% {background-color: rgb(239, 123, 142);}
+  50% {background-color: rgb(241, 180, 241)}
+  70% {background-color: rgb(233, 134, 233)}
+  100% {background-color: rgb(230, 28, 62)}
+}
+
+.escritaLogo{
+  margin-top: 80px;
+  margin-left: 23px;
+  position: absolute;
+  z-index: 100px;
+  font-family: 'Courier New', Courier, monospace;
 }

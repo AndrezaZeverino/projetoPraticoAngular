@@ -1,3 +1,22 @@
-<p>one-component works!</p>
-<p>Clique abaixo para buscar a informação de um doguinho</p>
-<button (click)="searchDataDogs()">Buscar dogs</button>
+<div class="body">
+  <div class="header">
+    <div><h1 class="escritaLogo">A BEAUTY</h1></div>
+    <div class="logo"></div>
+  </div>
+
+  <p>Clique abaixo para buscar a lista de produtos</p>
+  <button (click)="searchDataDogs()">Lista de produtos</button>
+
+  <div>
+    <!-- <select class="form-control">
+    <option *ngFor="let produto of produtos">{{produto.name}}</option>
+  </select> -->
+
+    <ol>
+      <li *ngFor="let produto of produtos">
+        {{ produto.name }}
+        {{ produto.image_link }}
+      </li>
+    </ol>
+  </div>
+</div>
