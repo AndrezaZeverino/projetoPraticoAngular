@@ -4,19 +4,19 @@
     <div class="logo"></div>
   </div>
 
-  <p>Clique abaixo para buscar a lista de produtos</p>
+  <!-- <p>Clique abaixo para buscar a lista de produtos</p> -->
   <!-- <button (click)="searchProducts()">Lista de produtos</button> -->
 
-  <div class="cards">
+  <div class="card-columns">
     <!-- <select class="form-control">
     <option *ngFor="let produto of produtos">{{produto.name}}</option>
   </select> -->
 
-    <ol>
+    <ol class="col-sm-12">
       <li *ngFor="let produto of produtos">
-        {{ produto.name }}
-        {{ produto.image_link }}
-        <div class="card col-sm-4" style="width: 18rem;">
+        <!-- {{ produto.name }}
+        {{ produto.image_link }} -->
+        <div class="card" style="width: 18rem;">
           <img class="card-img-top" src="{produto.image_link}" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">{{ produto.name }}</h5>
@@ -27,5 +27,5 @@
       </li>
     </ol>
   </div>
+  </div>
 
-</div>

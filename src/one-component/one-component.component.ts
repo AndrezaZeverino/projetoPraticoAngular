@@ -20,7 +20,6 @@ export class OneComponentComponent implements OnInit {
   searchProducts(){
     this.apiService.searchData().subscribe((data: IProduto) => {
       this.produtos = data;
-      console.log(this.produtos)
     })
   }
 
